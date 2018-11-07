@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--引入easyui的样式和jquery-->
+    <link rel="stylesheet" type="text/css" href="./themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./themes/icon.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+</head>
+<body>
+<div id="cc" class="easyui-layout" data-options="fit:true">
+    <div data-options="region:'north',title:'CRM管理系统',split:true" style="height:100px;"></div>
+    <div data-options="region:'west',title:'系统菜单',split:true" style="width:250px;">
+        <div class="easyui-accordion" data-options="fit:true">
+            <div title="客户管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+                <a href="#">客户管理</a>
+            </div>
+            <div title="联系人管理" data-options="iconCls:'icon-help'" style="padding:10px;">
+                <a href="#">联系人管理</a>
+            </div>
+            <div title="拜访记录管理" data-options="iconCls:'icon-search'" style="padding:10px;">
+                <a href="#">拜访记录管理</a>
+            </div>
+            <div title="统计分析" data-options="iconCls:'icon-search'" style="padding:10px;">
+                <a href="#">统计分析</a>
+            </div>
+            <div title="系统管理" data-options="iconCls:'icon-search'" style="padding:10px;">
+                <a href="#">系统管理</a>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'center',title:'数据区域'" style="padding:5px;background:#eee;"></div>
+</div>
+</body>
+</html>
